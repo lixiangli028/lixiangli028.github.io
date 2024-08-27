@@ -1,7 +1,14 @@
 {% if include.css.sri %}
   <link href="{{ include.css.href }}" rel="stylesheet" integrity="{{ include.css.sri }}" crossorigin="anonymous">
 {% elsif include.css.href %}
+<<<<<<< HEAD
   <link rel="stylesheet" href="{{ include.css.href }}">
 {% else %}
   <link rel="stylesheet" href="{{ include.css }}">
 {% endif %}
+=======
+  <link rel="stylesheet" href="{{ include.css.href }}" />
+{% else %}
+  <link rel="stylesheet" href="{{ include.css }}" />
+{% endif %}
+>>>>>>> 6abcac0 (first commit)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ###########################################################
 ### Welcome to Beautiful Jekyll!
 ### This config file is meant for settings that affect your entire website. When you first
@@ -173,10 +174,97 @@ footer-hover-col: "#0085A1"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
+=======
+# --- General options --- #
+
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+
+# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
+url: "https://yuzc19.github.io"
+baseurl: ""
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
+
+# Of course don't forget to change the username and projectname to YOUR username and project
+
+# Name of website
+title: Zichun Yu
+
+# Short description of your site
+description: Personal Website
+
+# --- Navigation bar options --- #
+
+# List of links in the navigation bar
+navbar-links:
+  Home: ""
+  Publications: "publications"
+  # Blog: "blog"
+  # Talks: "talks"
+  Resume: "resume"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/static/img/avatar.jpg"
+
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter
+# title-img: /path/to/image
+
+# --- Footer options --- #
+
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author:
+  name: Zichun Yu
+  email: "zichunyu@andrew.cmu.edu"
+  github: yuzc19 # eg. daattali
+  twitter: Zichun_Yu
+
+# Select which links to show in the footer
+footer-links-active:
+  rss: false
+  facebook: false
+  email: true
+  twitter: true
+  google-plus: false
+  github: true
+  reddit: false
+  linkedin: true
+  xing: false
+  stackoverflow: false
+  snapchat: false
+  instagram: false
+  youtube: false
+  spotify: false
+  telephone: false
+
+# Select which share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: false
+  google: true
+  linkedin: false
+
+# How to display the link to the website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "yuzc19.github.io" # eg. "deanattali.com/beautiful-jekyll"
+
+# --- Misc --- #
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+disqus: "yuzc19-github-io"
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: ""
+>>>>>>> 6abcac0 (first commit)
 
 # Google Tag Manager ID
 #gtm: ""
 
+<<<<<<< HEAD
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
 # whether or not you want to allow users to opt out of tracking.
@@ -260,6 +348,25 @@ date_format: "%B %-d, %Y"
 # Output options (more information on Jekyll's site)
 timezone: "America/Toronto"
 markdown: kramdown
+=======
+# Facebook App ID
+# fb_app_id: ""
+
+# Excerpt Word Length
+# Truncates the excerpt to the specified number of words on the index page
+excerpt_length: 50
+
+# Character used to separate site title and description in HTML document title
+# and RSS feed title
+title-separator: "-"
+
+# --- Don't need to touch anything below here (but you can if you want) --- #
+
+# Output options (more information on Jekyll's site)
+timezone: "America/New_York"
+markdown: kramdown
+mathjax: true
+>>>>>>> 6abcac0 (first commit)
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
@@ -269,12 +376,17 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
+<<<<<<< HEAD
   -
     scope:
+=======
+  - scope:
+>>>>>>> 6abcac0 (first commit)
       path: ""
       type: "posts"
     values:
       layout: "post"
+<<<<<<< HEAD
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
@@ -282,11 +394,24 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+=======
+      comments: true # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  - scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
+
+# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
+link-tags: false
+>>>>>>> 6abcac0 (first commit)
 
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
   - CNAME
+<<<<<<< HEAD
   - Gemfile
   - Gemfile.lock
   - LICENSE
@@ -297,7 +422,79 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+=======
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - README.md
+  - Vagrantfile
+
+# prose.io config
+prose:
+  rooturl: "_posts"
+  media: "img"
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Add a thumbnail image to your post."
+          placeholder: "Thumbnail"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+
+gems:
+  - jekyll-paginate
+>>>>>>> 6abcac0 (first commit)
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+<<<<<<< HEAD
+=======
+theme:
+>>>>>>> 6abcac0 (first commit)

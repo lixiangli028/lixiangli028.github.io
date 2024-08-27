@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Unreleased version
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
 - BREAKING CHANGE: `google-scholar` social network link no longer requires the prefix `citations?user=`; if you previously set this parameter, it needs to be updated (#1189)
@@ -200,6 +201,13 @@ One of the major changes in this version is that a lot of time was spent on reth
 **2017-08-17** Add support for notification, error, and warning boxes in markdown (#227) (thanks @OCram85)
 
 **2017-08-12** Add social buttons for twitch, yelp, and steam (#234) (thanks @TheRealBenForce)
+=======
+# CHANGELOG
+
+This file lists all non-trivial changes to Beautiful Jekyll.
+
+I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
+>>>>>>> 6abcac0 (first commit)
 
 **2017-03-30** Make the footer contact links friendly for screen readers (thanks @eugenius1)
 
@@ -213,7 +221,11 @@ One of the major changes in this version is that a lot of time was spent on reth
 
 **2016-12-25** Allow dynamic images on each blog post (#143) (thanks @bbritten)
 
+<<<<<<< HEAD
 **2016-12-15** Support `title-img` config param to have image in the navbar instead of text
+=======
+**2016-12-15** Support `title-img` config param to have image in the navbar instead of text 
+>>>>>>> 6abcac0 (first commit)
 
 **2016-12-08** Add support for phone numbers in footer; fix #136
 
@@ -225,7 +237,11 @@ One of the major changes in this version is that a lot of time was spent on reth
 
 **2016-07-29** Add CSS styling to code chunks
 
+<<<<<<< HEAD
 **2016-07-27** Add clickable tags that lead to a tag page (doesn't work for GitHub hosted sites) (thanks @epwalsh)
+=======
+**2016-07-27** Add clickable tags that lead to a tag page (thanks @epwalsh)
+>>>>>>> 6abcac0 (first commit)
 
 **2016-07-21** Add support for twitter cards (sharing on Twitter will be better); fixes #70
 
@@ -235,7 +251,11 @@ One of the major changes in this version is that a lot of time was spent on reth
 
 **2016-02-07** Avatar is now conditional (thanks @hristoyankov)
 
+<<<<<<< HEAD
 **2016-02-02** Migrate (forced to...) to jekyll 3
+=======
+**2016-02-02** Migrate (forced to...) to jekyll 3 
+>>>>>>> 6abcac0 (first commit)
 
 **2016-01-22** Make sure not to include JQuery twice, fixes #29
 
@@ -244,4 +264,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 ... Many small changes because the site was in its infancy
 
 **2015-03-12** Beautiful Jekyll version 0.0000001 is released!
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6abcac0 (first commit)

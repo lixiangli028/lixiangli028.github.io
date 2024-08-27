@@ -1,5 +1,6 @@
 ---
 common-css:
+<<<<<<< HEAD
   - "/assets/css/beautifuljekyll-minimal.css"
 common-ext-css:
   - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -15,11 +16,23 @@ common-ext-js:
 
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
+=======
+  - "/css/bootstrap.min.css"
+  - "/css/main-minimal.css"
+common-js:
+  - "/js/jquery-1.11.2.min.js"
+  - "/js/bootstrap.min.js"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> 6abcac0 (first commit)
 
   {% include head.html %}
 
   <body>
 
+<<<<<<< HEAD
     <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %} main-content">
       {% if page.before-content %}
         <div class="before-content">
@@ -44,5 +57,15 @@ common-ext-js:
 
     {% include footer-scripts.html %}
 
+=======
+    <div role="main" class="container main-content">
+      {{ content }}
+    </div>
+
+    {% include footer-minimal.html %}
+  
+    {% include footer-scripts.html %}
+  
+>>>>>>> 6abcac0 (first commit)
   </body>
 </html>

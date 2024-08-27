@@ -8,6 +8,10 @@ _site
 Thumbs.db
 ehthumbs.db
 
+<<<<<<< HEAD
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+=======
+vendor/
+>>>>>>> 6abcac0 (first commit)
